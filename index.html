@@ -17,14 +17,12 @@
             color: #1e293b;
             -webkit-font-smoothing: antialiased;
         }
-        /* 부드러운 스크롤 및 터치 최적화 */
         html {
             scroll-behavior: smooth;
         }
         .card-shadow {
             box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.06);
         }
-        /* 인쇄 시 깔끔한 출력을 위한 스타일 */
         @media print {
             body { background-color: #ffffff; }
             .no-print { display: none !important; }
@@ -34,12 +32,12 @@
 </head>
 <body class="pb-16">
 
-    <!-- 상단 히어로 헤더 (네이비 & 블루 그라데이션) -->
+    <!-- 상단 히어로 헤더 -->
     <header class="bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 text-white pt-8 pb-12 px-5 rounded-b-3xl shadow-lg">
         <div class="max-w-xl mx-auto">
             <div class="inline-flex items-center gap-2 bg-blue-500/20 border border-blue-400/30 text-blue-200 text-xs font-bold px-3 py-1.5 rounded-full mb-4">
                 <i class="fa-solid fa-file-signature"></i>
-                <span>2026년 11월 노조 간담회 공식 건의안</span>
+                <span>노조 간담회 공식 건의안</span>
             </div>
             <h1 class="text-2xl sm:text-3xl font-black leading-tight tracking-tight mb-3">
                 광진구 운전직<br>
@@ -95,7 +93,8 @@
                 </div>
             </div>
             <p class="text-xs text-slate-600 leading-relaxed mb-4">
-                단순한 '청소과 vs 타 부서'의 이분법을 넘어, 구청 전체 운전직 직위의 실제 노동 강도와 근무 여건을 반영한 <strong>3단계 급지(Tier) 분류 및 순환 원칙</strong>을 명문화합니다.
+                단순한 '청소과 vs 타 부서'의 이분법을 넘어, 구청 전체 운전직 직위의 실제 노동 강도와 근무 여건을 반영한 <strong>3단계 급지(Tier) 분류 및 순환 원칙</strong>을 명문화합니다.<br>
+                <span class="inline-block mt-1.5 text-blue-700 font-semibold">※ 1군과 2군의 구체적인 부서 분류는 노조 간담회를 통해 각 부서 대표들과 세부 조율하여 최종 확정합니다.</span>
             </p>
 
             <!-- 급지 카드 리스트 -->
@@ -109,7 +108,7 @@
                         <span class="text-[11px] font-semibold text-emerald-700">정시 출퇴근 · 민원 최소</span>
                     </div>
                     <p class="text-xs text-slate-700 font-medium leading-relaxed">
-                        동 주민센터, 보건소, 본청 일반 행정지원 차량 등
+                        동 주민센터, 보건소, 본청 일반 행정지원 차량 등 <span class="text-slate-500">(간담회 협의 확정)</span>
                     </p>
                 </div>
 
@@ -124,7 +123,7 @@
                     <ul class="text-xs text-slate-700 space-y-1.5 mt-2">
                         <li class="flex items-start gap-1.5">
                             <span class="text-sky-600 font-bold">• 타 부서:</span>
-                            <span>가로경관과(철거·단속), 교통지도과(악성 민원), 문화관광과(주말·불규칙 운행) 등 고충 부서</span>
+                            <span>가로경관과(철거·단속), 교통지도과(악성 민원), 문화관광과(주말·불규칙 운행) 등 고충 부서 <span class="text-slate-500">(간담회 협의 확정)</span></span>
                         </li>
                         <li class="flex items-start gap-1.5">
                             <span class="text-sky-600 font-bold">• 청소과:</span>
@@ -172,7 +171,7 @@
                 <h2 class="text-lg font-extrabold text-slate-800">기피 업무(야간 노면) 차출 순서</h2>
             </div>
             <p class="text-xs text-slate-600 leading-relaxed mb-4">
-                신규 유입이 끊긴 상황에서도 감정싸움 없이 투명하게 인원을 배정하기 위한 <strong>단계별 자동 차출 시스템</strong>입니다.
+                신규 유입이 끊긴 상황에서도 단기 이탈 꼼수나 독박 없이 투명하게 인원을 배정하기 위한 <strong>단계별 자동 차출 시스템</strong>입니다.
             </p>
 
             <div class="relative pl-6 border-l-2 border-blue-200 space-y-5">
@@ -197,13 +196,24 @@
                 <!-- 2순위 -->
                 <div class="relative">
                     <span class="absolute -left-[31px] top-0.5 w-6 h-6 rounded-full bg-slate-700 text-white text-xs font-black flex items-center justify-center shadow">2</span>
-                    <h3 class="text-sm font-extrabold text-slate-800">2순위: 전원 경험 시 '쿨타임(휴지기)' 적용</h3>
-                    <p class="text-xs text-slate-600 mt-1 leading-relaxed">
-                        전원이 기피 야간을 거쳤을 경우, <strong>가장 마지막으로 기피 야간(노면·재활용)을 종료한 날짜가 오래된 순</strong>으로 차출합니다.<br>
-                        <span class="inline-block mt-1.5 bg-amber-50 text-amber-800 border border-amber-200 px-2.5 py-1 rounded-lg text-[11px] font-semibold">
-                            ※ 선호 수요가 있는 '집하장' 근무 이력은 기피 야간 휴지기 산정에서 제외
-                        </span>
+                    <h3 class="text-sm font-extrabold text-slate-800">2순위: 전원 경험 시 '3단계 정밀 비교' 적용</h3>
+                    <p class="text-xs text-slate-600 mt-1 mb-2 leading-relaxed">
+                        전원이 기피 야간을 1회 이상 거쳤을 경우, 아래 3단계 순서대로 공정하게 차출합니다.
                     </p>
+                    <div class="bg-slate-50 border border-slate-200/80 rounded-xl p-3 space-y-2 text-xs text-slate-700">
+                        <div class="flex items-start gap-2">
+                            <span class="bg-slate-700 text-white text-[10px] font-bold px-1.5 py-0.5 rounded shrink-0 mt-0.5">1차</span>
+                            <span><strong>기피 야간(노면·재활용) 누적 근무 개월 수가 적은 순</strong> <span class="text-slate-500">(단기·중도 이탈자 보완 / 집하장 이력은 합산 제외)</span></span>
+                        </div>
+                        <div class="flex items-start gap-2 border-t border-slate-200/70 pt-2">
+                            <span class="bg-blue-600 text-white text-[10px] font-bold px-1.5 py-0.5 rounded shrink-0 mt-0.5">2차</span>
+                            <span>누적 개월 수가 같다면, <strong>모든 야간 근무(노면·재활용·집하장 포함) 마지막 종료일이 오래된 순</strong> <span class="text-blue-700 font-medium">(야간 휴지기가 긴 순)</span></span>
+                        </div>
+                        <div class="flex items-start gap-2 border-t border-slate-200/70 pt-2">
+                            <span class="bg-amber-600 text-white text-[10px] font-bold px-1.5 py-0.5 rounded shrink-0 mt-0.5">3차</span>
+                            <span>개월 수와 종료일마저 같다면, <strong class="text-amber-700">연소자 또는 하위 직급 순</strong></span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -305,7 +315,7 @@
             </div>
         </section>
 
-        <!-- 모바일 액션 버튼 (카카오톡 전달용 텍스트 복사 & 인쇄) -->
+        <!-- 모바일 액션 버튼 -->
         <div class="no-print pt-2 flex gap-2.5">
             <button onclick="copyProposalText()" class="flex-1 bg-slate-900 hover:bg-slate-800 active:scale-95 transition text-white font-bold text-xs py-3.5 px-4 rounded-2xl shadow-md flex items-center justify-center gap-2">
                 <i class="fa-regular fa-copy"></i>
@@ -319,23 +329,36 @@
 
     </main>
 
-    <!-- 알림 메시지 박스 (alert 대신 사용) -->
+    <!-- 수동 복사 폴백 모달 (인앱 브라우저 클립보드 차단 대비) -->
+    <div id="copy-modal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm hidden items-center justify-center p-4 z-50">
+        <div class="bg-white rounded-3xl max-w-md w-full p-5 shadow-2xl space-y-3">
+            <div class="flex items-center justify-between">
+                <h3 class="text-sm font-extrabold text-slate-800">카톡 전달용 요약본</h3>
+                <button onclick="closeCopyModal()" class="text-slate-400 hover:text-slate-600 p-1">
+                    <i class="fa-solid fa-xmark text-base"></i>
+                </button>
+            </div>
+            <p class="text-[11px] text-slate-500">아래 내용을 길게 눌러 전체 선택 후 복사해 주세요.</p>
+            <textarea id="modal-textarea" readonly class="w-full h-56 p-3 text-xs bg-slate-50 border border-slate-200 rounded-2xl text-slate-700 leading-relaxed focus:outline-none"></textarea>
+            <button onclick="closeCopyModal()" class="w-full bg-blue-600 text-white font-bold text-xs py-3 rounded-xl">닫기</button>
+        </div>
+    </div>
+
+    <!-- 알림 메시지 박스 -->
     <div id="toast-box" class="fixed bottom-6 left-1/2 -translate-x-1/2 bg-slate-900/95 text-white text-xs font-bold px-5 py-3 rounded-full shadow-xl opacity-0 pointer-events-none transition-opacity duration-300 flex items-center gap-2 z-50 whitespace-nowrap">
         <i class="fa-solid fa-circle-check text-emerald-400"></i>
         <span id="toast-msg">클립보드에 복사되었습니다!</span>
     </div>
 
     <script>
-        // 카카오톡 전달용 요약 텍스트 복사 함수 (iFrame 호환 execCommand 사용)
-        function copyProposalText() {
-            const summaryText = `[제안서] 광진구 운전직 인사 순환 및 조직 운영 기준 명문화(안)
+        const summaryText = `[제안서] 광진구 운전직 인사 순환 및 조직 운영 기준 명문화(안)
 
 1. 제안 배경
 - 2024년 이후 신규 충원 단절로 기피 업무(야간 노면) 순환 한계 도래
 - 2027년 1월 본청 차량지원실장·청소과 반장 공채 1기 동기 체제 출범에 맞춘 영구적 인사 기준 확립 필요
 
 2. 핵심 4대 혁신안
-① 구청 전체 운전직 근무지 '3군 급지화' 및 순환 전보제
+① 구청 전체 운전직 근무지 '3군 급지화' 및 순환 전보제 (※ 1·2군 세부 부서는 간담회 협의로 최종 확정)
 - 1군(동주민센터, 보건소, 본청 일반 등 선호지)
 - 2군(가로경관·교통지도·문화관광 등 고충부서 / 청소과 주간 및 집하장)
 - 3군(청소과 야간 노면 - 최하위 기피지)
@@ -344,7 +367,7 @@
 ② 야간 노면 차출 순서 시스템화
 - 0순위: 휴직 및 타 부서 복귀자 중 기피 야간 무경험자
 - 1순위: 청소과 내 기피 야간 무경험자 (연소자 우선)
-- 2순위: 전원 경험 시 마지막 기피 야간(노면·재활용) 종료일이 가장 오래된 순 (집하장 이력 제외)
+- 2순위: 전원 경험 시 ① 기피 야간(노면·재활용) 누적 개월 수 적은 순(집하장 제외) → ② 전체 야간(노면·재활용·집하장) 마지막 종료일 오래된 순(야간 휴지기 긴 순) → ③ 연소자·하위 직급 순
 
 ③ 전문 필수인력 기준 및 개방형 OJT(부사수제)
 - 중장비·숙련 필수인력 고정 배치로 안전 확보하되, 업무 외 시간 교육을 통해 실력 입증 시 누구나 대체 가능하도록 개방
@@ -353,20 +376,70 @@
 - '운전반장'을 '청소과 운전실장'으로 격상 및 임기 3년 명문화
 - 업무분장 1차 편성권·근태 기록 권한 부여 및 확정 전 '현장 사전 브리핑 기간' 의무화`;
 
+        async function copyProposalText() {
+            // 1. 최신 Clipboard API 시도
+            if (navigator.clipboard && window.isSecureContext) {
+                try {
+                    await navigator.clipboard.writeText(summaryText);
+                    showToast("카톡 전달용 요약본이 복사되었습니다!");
+                    return;
+                } catch (err) {
+                    // 실패 시 폴백 진행
+                }
+            }
+
+            // 2. 모바일/iOS 호환 execCommand 폴백
             const textArea = document.createElement("textarea");
             textArea.value = summaryText;
+            textArea.setAttribute("readonly", "");
             textArea.style.position = "fixed";
-            textArea.style.left = "-9999px";
+            textArea.style.top = "0";
+            textArea.style.left = "0";
+            textArea.style.opacity = "0";
             document.body.appendChild(textArea);
-            textArea.select();
-            
+
+            const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+            if (isIOS) {
+                const range = document.createRange();
+                range.selectNodeContents(textArea);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                textArea.setSelectionRange(0, 999999);
+            } else {
+                textArea.select();
+            }
+
+            let success = false;
             try {
-                document.execCommand('copy');
-                showToast("카톡 전달용 요약본이 복사되었습니다!");
+                success = document.execCommand('copy');
             } catch (err) {
-                showToast("복사에 실패했습니다. 화면을 캡처해 주세요.");
+                success = false;
             }
             document.body.removeChild(textArea);
+
+            if (success) {
+                showToast("카톡 전달용 요약본이 복사되었습니다!");
+            } else {
+                // 3. 인앱 브라우저 등 완전 차단 시 수동 복사창 띄우기
+                openCopyModal();
+            }
+        }
+
+        function openCopyModal() {
+            const modal = document.getElementById('copy-modal');
+            const textarea = document.getElementById('modal-textarea');
+            textarea.value = summaryText;
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            textarea.focus();
+            textarea.select();
+        }
+
+        function closeCopyModal() {
+            const modal = document.getElementById('copy-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
         }
 
         function showToast(message) {
